@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Modern Heritage";
+  src: url("/fonts/ModernHeritage-Void.otf.otf") format("opentype");
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: "Primed";
+  src: url("/fonts/Primed.otf") format("opentype");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+@font-face {
+  font-family: "Montserrat VariableFont";
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* Supports the full range of weights */
+  font-display: swap;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+
+  --font-brandHeader: "Primed", sans-serif;
+  --font-brandBody: "Montserrat VariableFont", sans-serif;
+  --font-brandButton: "Modern Heritage", sans-serif;
+
+  
+  --color-brand-Blue: #0259DE;
+  --color-brand-orange: #FF5C00;
+  --color-brand-white: #FFFFFF;
 }
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important; /* Let Lenis take over */
+}
+
+/* Fallback for when Lenis isn't loaded yet */
+/* html {
+  scroll-behavior: smooth;
+} */
