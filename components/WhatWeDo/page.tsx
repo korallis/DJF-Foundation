@@ -30,7 +30,7 @@ const WhatWeDo = ({
   };
 
   return (
-    <section id="WhatWeDo" className="font-brand overflow-hidden bg-[#F0F4F5] py-16 px-6 lg:py-24">
+    <section id="WhatWeDo" className="font-brand overflow-hidden px-6 md:px-0 mt-40 md:mt-60 text-[var(--color-brand-Blue)]">
       <motion.div 
         initial="hidden"
         whileInView="visible"
@@ -40,7 +40,7 @@ const WhatWeDo = ({
       >
         <motion.h2 
           variants={itemVariants}
-          className="text-brand-Blue text-[50px] leading-[1] font-brandHeader font-[700] mb-12 text-center md:text-[80px] lg:text-[114px]"
+          className="text-brand-Blue text-[50px] leading-[1] font-brandHeader font-[700] mb-30 text-center md:text-[80px] lg:text-[114px]"
         >
           {heading}
         </motion.h2>
@@ -58,13 +58,13 @@ const WhatWeDo = ({
                 className={`cursor-pointer p-8 lg:p-12 rounded-[40px] lg:rounded-[60px] transition-all duration-500 ease-in-out border-2 ${
                   isActive
                     ? "bg-brand-orange text-white border-brand-orange scale-[1.02]"
-                    : "bg-white lg:bg-transparent text-brand-Blue border-transparent hover:border-brand-orange/20"
+                    : "bg-white lg:bg-white text-brand-Blue border-transparent hover:border-brand-orange/20"
                 }`}
               >
-                <h3 className="text-[28px] leading-tight font-brandBody font-[500] mb-4 md:text-[36px] lg:text-[44px]">
+                <h3 className="text-[28px] leading-tight font-brandBody font-[500] mb-4 md:text-[36px] lg:text-[44px] text-center">
                   {card.title}
                 </h3>
-                <p className={`text-[18px] font-brandBody font-[400] leading-relaxed md:text-[22px] lg:text-[25px] ${
+                <p className={`text-[18px] font-brandBody font-[400] leading-relaxed md:text-[22px] lg:text-[25px] text-center ${
                   isActive ? "text-white/90" : "text-brand-Blue"
                 }`}>
                   {card.description}
