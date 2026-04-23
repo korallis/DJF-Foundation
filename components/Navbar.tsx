@@ -12,10 +12,10 @@ if (typeof window !== "undefined") {
 
 const NAV_LINKS = [
   { name: "Home", href: "/" },
-  { name: "Our Story", href: "#" },
-  { name: "What We Do", href: "#" },
-  { name: "Get Involved", href: "#" },
-  { name: "Impact", href: "#" },
+  { name: "Our Story", href: "OurStory" },
+  { name: "What We Do", href: "WhatWeDo" },
+  { name: "Get Involved", href: "GetInvolved" },
+  { name: "Impact", href: "Impact" },
   { name: "Contact Us", href: "#" },
 ];
 

@@ -33,7 +33,7 @@ export default function NotFound() {
   }, { scope: container }); // GSAP handles the .current internally here
 
   return (
-    <div ref={container} className="px-6 md:px-0 mt-40 md:mt-60 text-[var(--color-brand-Blue)]">
+    <div ref={container} className="max-w-6xl mx-auto px-6 md:px-0 mt-40 md:mt-60 text-[var(--color-brand-Blue)]">
       <h1 className="animate-text text-4xl md:text-[110px] font-brandHeader mb-4">
         Error 404: Page Not Found
       </h1>
