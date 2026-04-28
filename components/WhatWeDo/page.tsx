@@ -45,7 +45,7 @@ const WhatWeDo = ({
           {heading}
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-18">
           {cards.map((card, index) => {
             const isActive = activeIndex === index;
             
