@@ -5,17 +5,17 @@ import React from 'react';
 export default function VolunteerForm() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#D8E6FF] via-[#8DB4F0] to-[#005FF9] py-20 px-6 flex flex-col items-center font-sans">
-      <h1 className="text-[#005FF9] text-[60px] md:text-[80px] font-serif italic mb-12">
+      <h1 className="text-[#005FF9] text-[60px] md:text-[110px] font-brandHeader mb-12 mt-12">
         Volunteer With Us
       </h1>
 
       <form className="w-full max-w-4xl space-y-6">
         {/* Personal Details */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <input type="text" placeholder="Full Name" className="w-full h-14 rounded-full px-8 outline-none text-[#005FF9]" />
-          <input type="text" placeholder="Phone" className="w-full h-14 rounded-full px-8 outline-none text-[#005FF9]" />
-          <input type="email" placeholder="Email" className="w-full h-14 rounded-full px-8 outline-none text-[#005FF9]" />
-          <input type="text" placeholder="Location" className="w-full h-14 rounded-full px-8 outline-none text-[#005FF9]" />
+          <input type="text" placeholder="Full Name" className="w-full h-14 bg-white rounded-full px-8 outline-none text-[#005FF9]" />
+          <input type="text" placeholder="Phone" className="w-full h-14 bg-white rounded-full px-8 outline-none text-[#005FF9]" />
+          <input type="email" placeholder="Email" className="w-full h-14 bg-white rounded-full px-8 outline-none text-[#005FF9]" />
+          <input type="text" placeholder="Location" className="w-full h-14 bg-white rounded-full px-8 outline-none text-[#005FF9]" />
         </div>
 
         {/* Involvement Options */}
