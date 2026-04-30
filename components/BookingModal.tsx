@@ -19,15 +19,15 @@ export default function BookingModal({ isOpen, onClose, serviceTitle, formTitle 
     setIsSubmitting(true);
     formData.append("form_title", formTitle);
     
-    // const result = await sendServiceEmail(formData);
+    const result = await sendServiceEmail(formData);
     setIsSubmitting(false);
 
-    // if (result.success) {
-    //   alert("Enquiry sent successfully!");
-    //   onClose();
-    // } else {
-    //   alert("Error: " + (result.error || "Failed to send"));
-    // }
+    if (result.success) {
+      alert("Enquiry sent successfully!");
+      onClose();
+    } else {
+      alert("Error: " + (result.error || "Failed to send"));
+    }
   };
 
   return (
