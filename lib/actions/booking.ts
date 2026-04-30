@@ -138,3 +138,4 @@ export async function sendSubscribeEmail(formData: FormData) {
     return { success: false, error: "Process failed" };
   }
 }
+
