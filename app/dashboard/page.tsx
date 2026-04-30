@@ -42,6 +42,21 @@ export default async function DashboardPage() {
 
       {/* Main Grid */}
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {/* Existing Cards */}
+     
+
+
+    
+
+
+        <DashboardCard
+          title="Impact Stories"
+          description="Community impact and member stories."
+          href="/dashboard/stories"
+          createHref="/dashboard/stories/create"
+          icon={<Calendar className="text-[#00D9DA]" size={28} />}
+          count="8 Active"
+        />
 
         {/* UPDATED SITE PAGES CARD */}
         <div className="group relative bg-white rounded-3xl border border-gray-100 p-8 shadow-xl shadow-gray-200/40 hover:shadow-2xl hover:shadow-[#1F3154]/5 transition-all duration-300 flex flex-col justify-between overflow-hidden">

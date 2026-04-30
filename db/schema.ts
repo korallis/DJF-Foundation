@@ -5,6 +5,7 @@ import {
   jsonb,
   pgEnum,
   uuid,
+  serial,
   varchar,
   integer,
   uniqueIndex,
@@ -56,6 +57,15 @@ export const pages = pgTable("pages", {
   slug: text("slug").unique().notNull(),
   content: jsonb("content").notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+export const impactStories = pgTable("stories", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  role: text("role").default("Impact Story"),
+  content: text("content").notNull(),
+  imageUrl: text("image_url").notNull(),
+  createdAt: timestamp("created_at").defaultNow(),
 });
 
 /* -----------------------------------------------------

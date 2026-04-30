@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useRef, useState } from "react";
+import { IMPACT_PROJECTS } from "./../../../constants/impact-projects";
 
 export default function ImpactLayout() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -14,34 +15,6 @@ export default function ImpactLayout() {
       setScrollProgress(Math.max(10, progress));
     }
   };
-
-  const items = [
-    {
-      title: "The Kweli Project",
-      img: "/kvell.svg",
-      text: "A volunteer-led initiative providing children on the Thai-Burma border displaced by conflict with support.",
-    },
-    {
-      title: "Carma Earth",
-      img: "/Ecarma.svg",
-      text: "Our commitment to environmental impact, funding verified projects like tree planting and ocean restoration.",
-    },
-    {
-      title: "Kindness Project",
-      img: "/Kindness.svg",
-      text: "Focused on small, meaningful acts that support individuals and communities through care and compassion.",
-    },
-    {
-      title: "The Kweli Project",
-      img: "/kvell.svg",
-      text: "A volunteer-led initiative providing children on the Thai-Burma border displaced by conflict with support.",
-    },
-    {
-      title: "The Kweli Project",
-      img: "/kvell.svg",
-      text: "A volunteer-led initiative providing children on the Thai-Burma border displaced by conflict with support.",
-    },
-  ];
 
   return (
     <section className="relative min-h-screen bg-gradient-to-b from-[#a9b9d3] via-white to-[#0259DE] py-12 md:py-20 px-4 md:px-6 overflow-hidden">
@@ -68,7 +41,7 @@ export default function ImpactLayout() {
         >
           <style jsx>{`div::-webkit-scrollbar { display: none; }`}</style>
 
-          {items.map((item, i) => (
+          {IMPACT_PROJECTS.map((item, i) => (
             <div 
               key={i} 
               className="snap-start flex flex-col md:flex-row bg-white rounded-[30px] md:rounded-[45px] overflow-hidden shadow-lg border border-blue-50/50 min-h-[380px] md:min-h-[240px] w-full"
