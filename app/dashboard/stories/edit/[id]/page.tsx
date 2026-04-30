@@ -1,5 +1,5 @@
 import { db } from "@/db";
-import { stories } from "@/db/schema";
+import { impactStories } from "@/db/schema";
 import { eq } from "drizzle-orm";
 import EditStoryForm from "./EditStoryForm";
 import { notFound } from "next/navigation";
